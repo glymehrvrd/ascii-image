@@ -23,7 +23,7 @@
       canvas_width = lines[0].length * 5;
       await tick();
       let ctx = canvas.getContext("2d");
-      ctx.font = "8px Courier New";
+      ctx.font = "10px Courier New";
       let y = 8;
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
@@ -48,4 +48,7 @@
 </main>
 
 <style>
+  canvas {
+    background-color: white;
+  }
 </style>
